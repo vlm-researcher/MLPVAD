@@ -1,0 +1,7 @@
+coco_caption:
+  annotations:
+    train: /home/username/MSCoco_caption_gen/annotations/captions_train2017.json
+    val: /home/username/MSCoco_caption_gen/annotations/captions_val2017.json
+  images:
+    train: /home/username/MSCoco_caption_gen/train2017
+    val: /home/username/MSCoco_caption_gen/val201

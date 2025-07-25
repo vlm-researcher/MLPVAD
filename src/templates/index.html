@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>VadCLIP Video Anomaly Detection</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 40px;
+                    background-color: #f4f4f4;
+                    color: #333;
+                }
+                h2 {
+                    color: #2c3e50;
+                }
+                form {
+                    margin-bottom: 20px;
+                }
+                input[type="file"] {
+                    margin-right: 10px;
+                }
+                .btn {
+                    padding: 10px 20px;
+                    background-color: #3498db;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .btn:hover {
+                    background-color: #2980b9;
+                }
+                .result h3 {
+                    margin-top: 0;
+                    color: #27ae60;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Upload CLIP Feature (.npy) File</h2>
+            <form action="/predict" enctype="multipart/form-data" method="post">
+                <input name="file" type="file">
+                <input type="submit" value="Analyze" class="btn">
+            </form>
+            <div id="result"></div>
+        </body>
+    </html>

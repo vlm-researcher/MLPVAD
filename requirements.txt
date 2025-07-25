@@ -1,0 +1,6 @@
+# === Web API Libraries ===
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+jinja2

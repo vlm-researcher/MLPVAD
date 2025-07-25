@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VadCLIP Prediction</title>
+    <style>
+        body {font-family: Arial; 
+            margin: 40px; 
+            background-color: #f4f4f4; 
+        }
+        .result {background-color: #fff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        .retry-btn {display: inline-block; 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            background: #e67e22; 
+            color: white; 
+            border-radius: 5px; 
+            text-decoration: none; 
+        }
+        .retry-btn:hover { 
+            background-color: #d35400; 
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h3>Prediction Result: {{ result }}</h3>
+        <h4>Average Score: {{ score }}</h4>
+        <img src="data:image/png;base64,{{ plot }}">
+        <br><a class="retry-btn" href="/">Try another video</a>
+    </div>
+</body>
+</html>
